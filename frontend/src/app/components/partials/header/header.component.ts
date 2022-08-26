@@ -25,6 +25,7 @@ export class HeaderComponent implements OnInit {
     this.userService.logout();
   }
   get isAuth(){
+    console.log(this.user.token)
     return this.user.token;
   }
 }
